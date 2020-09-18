@@ -1,0 +1,22 @@
+-- Table: public.cliente
+
+-- DROP TABLE public.cliente;
+
+CREATE TABLE public.cliente
+(
+    id integer NOT NULL DEFAULT nextval('cliente_id_seq'::regclass),
+    nome character varying(100) COLLATE pg_catalog."default",
+    email character varying(50) COLLATE pg_catalog."default",
+    cpf character varying(14) COLLATE pg_catalog."default",
+    sexo character(1) COLLATE pg_catalog."default",
+    celular character varying(14) COLLATE pg_catalog."default",
+    imagem bytea,
+    CONSTRAINT cliente_pkey PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.cliente
+    OWNER to postgres;

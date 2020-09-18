@@ -34,6 +34,7 @@
 - Dir. assets/js => bilbioteca jquery e scripts js usados em validações
 - File. autoload.php => faz o carregamento automático das classes quando necessário
 - File. index.php => tela inicial com a listagem de clientes cadastrados
+- Dir. sql => apenas um txt com o create da tabela utilizada
 
 ## Configuração para deploy da aplicação:
 - Editar o arquivo **app/lib/config.php** para modificar ambiente
