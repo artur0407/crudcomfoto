@@ -38,3 +38,4 @@
 
 ## Configuração para deploy da aplicação:
 - Editar o arquivo **app/lib/config.php** para modificar ambiente
+- Executar no sgbd o comando sql contido em sql/create.txt
